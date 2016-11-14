@@ -5,14 +5,14 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace Spryker\Zed\UtilNetwork\Business;
+namespace Spryker\Service\UtilNetwork;
 
-use Spryker\Zed\Kernel\Business\AbstractFacade;
+use Spryker\Service\Kernel\AbstractService;
 
 /**
- * @method \Spryker\Zed\UtilNetwork\Business\UtilNetworkBusinessFactory getFactory()
+ * @method \Spryker\Service\UtilNetwork\UtilNetworkServiceFactory getFactory()
  */
-class UtilNetworkFacade extends AbstractFacade implements UtilNetworkFacadeInterface
+class UtilNetworkService extends AbstractService implements UtilNetworkServiceInterface
 {
 
     /**
@@ -27,8 +27,7 @@ class UtilNetworkFacade extends AbstractFacade implements UtilNetworkFacadeInter
     public function getHostName()
     {
         return $this->getFactory()
-           ->createHost()
-           ->getHostname();
+            ->createHost()
+            ->getHostname();
     }
-
 }

@@ -1,19 +1,15 @@
 <?php
-
 /**
  * Copyright © 2016-present Spryker Systems GmbH. All rights reserved.
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
+namespace Spryker\Service\UtilNetwork;
 
-namespace Spryker\Zed\UtilNetwork\Business;
-
-/**
- * @method \Spryker\Zed\UtilNetwork\Business\UtilNetworkBusinessFactory getFactory()
- */
-interface UtilNetworkFacadeInterface
+interface UtilNetworkServiceInterface
 {
 
     /**
+     *
      * Specification:
      *  - Get current running script hostname
      *
@@ -22,5 +18,4 @@ interface UtilNetworkFacadeInterface
      * @return string
      */
     public function getHostName();
-
 }

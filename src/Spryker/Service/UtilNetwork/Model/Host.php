@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace Spryker\Shared\UtilNetwork;
+namespace Spryker\Service\UtilNetwork\Model;
 
 class Host implements HostInterface
 {
@@ -26,5 +26,4 @@ class Host implements HostInterface
 
         return self::$hostname;
     }
-
 }
